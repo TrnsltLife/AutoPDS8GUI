@@ -1,0 +1,14 @@
+.settings/
+bin/**
+tmp/**
+tmp/**
+snippets/**
+local-tests/**
+AutoPDS8GUI*.jar
+*.class
+*.tmp
+*.bak
+local.properties
+dist/**
+target/**
+staging/**
