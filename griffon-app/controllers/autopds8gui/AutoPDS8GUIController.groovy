@@ -43,6 +43,10 @@ class AutoPDS8GUIController {
 				
 				model.statusLog += "Creating " + (new File(producer.settings.saveas)).getCanonicalPath() + "<br>\r\n"
 				producer.createXMLFile()
+				model.statusLog += """<font color="#009900">Created!</font><br>\r\n"""
+				model.statusLog += "Creating " + (new File(producer.settings.srtfile)).getCanonicalPath() + "<br>\r\n"
+				producer.exportSRTFile()
+				model.statusLog += """<font color="#009900">Created!</font><br>\r\n"""
 				model.statusLog += """<font color="#009900">Done!</font><br>\r\n"""
 			}
 			catch(Exception e)

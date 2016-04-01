@@ -1,0 +1,13 @@
+def gantHome = System.getenv("GANT_HOME")
+if(!gantHome) {
+	println "To build your file you have to set 'GANT_HOME' env variable pointing to your Gant install."
+	System.exit(1)
+}
+
+ant.taskdef(name:'groovyc', classname:'org.codehaus.groovy.ant.Groovyc')
+
+
+target(default:"Default target")
+{
+	println("Hello Gant")
+}
